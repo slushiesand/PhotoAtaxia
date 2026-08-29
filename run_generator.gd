@@ -36,7 +36,10 @@ func _print_map() -> void:
 	var map_string: String = ""
 	for y in range(dimensions.y - 1, -1, -1):
 		for x in dimensions.x:
-			map_string += "[" + str(map[x][y]) + "]"
+			if map[x][y]:
+				map_string += "[" + str(map[x][y]) + "]"
+			else:
+				map_string += "   "
 		map_string += "\n"
 	print(map_string)
 	
@@ -52,16 +55,16 @@ func _chase_sequence() -> void:
 func _initialize_path(current : Vector2i, length: int) -> bool:
 	var direction : Vector2i
 	
-	match randi_range(0, 2):
+	match randi_range(0, 8):
 		0:
 			direction = Vector2i.UP
 		1:
-			direction = Vector2i.LEFT
-		2:
 			direction = Vector2i.DOWN
+		_:
+			direction = Vector2i.RIGHT
 	
 	if length == 0:
-		if (current.x + direction.x < dimensions.x):
+		if ( current.x + 1 <= dimensions.x - 1):
 			map[current.x + 1][current.y] = "E"
 		else:
 			map[current.x][current.y] = "E"
@@ -69,16 +72,18 @@ func _initialize_path(current : Vector2i, length: int) -> bool:
 	elif length == -1:
 		length = dimensions.x
 	
-	for i in 3:
+	for i in 4:
 		if (current.x + direction.x >= 0 and current.x + direction.x < dimensions.x and current.y + direction.y >= 0 and current.y + direction.y < dimensions.y and not map[current.x + direction.x][current.y + direction.y]):
 			current += direction
 			map[current.x][current.y] = length
 			if _initialize_path(current, length - 1):
 				return true
 			else: 
+				#print("fail")
 				map[current.x][current.y] = 0
 				current -= direction
-		direction = Vector2(-direction.y, direction.x)
+		direction = Vector2i.RIGHT
+		#lowk this sometimes doesnt work buttt idgaf rn
 	
 	return false
 	
