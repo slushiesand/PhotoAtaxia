@@ -1,2 +1,7 @@
+Bone2D
+Skeleton2D
 Node2D
+Polygon2D
+CollisionPolygon2D
+CharacterBody2D
 Node

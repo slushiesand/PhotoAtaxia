@@ -1,0 +1,299 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4rbvclxvenp1"]
+
+[ext_resource type="Script" uid="uid://cq5rnotghyaoh" path="res://lazarus.gd" id="1_egw7e"]
+[ext_resource type="Texture2D" uid="uid://bnueqk23alura" path="res://art/lazarus_ref.png" id="2_khmcl"]
+[ext_resource type="Texture2D" uid="uid://bhoxipx3ee5ck" path="res://art/lazarus_texture.png" id="3_ta84f"]
+
+[node name="lazarus" type="Node2D"]
+script = ExtResource("1_egw7e")
+metadata/_edit_horizontal_guides_ = [2.0]
+
+[node name="LazarusRef" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.31764707)
+position = Vector2(-1, -281)
+texture = ExtResource("2_khmcl")
+
+[node name="laz_parts" type="Node2D" parent="."]
+
+[node name="back_hair" type="Polygon2D" parent="laz_parts"]
+position = Vector2(-191, -670)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(169.17694, 205.74382, 108.288025, 219.60472, 82.05133, 271.58307, 64.230194, 351.77823, -0.12394714, 442.86407, 1.8561707, 504.74304, 50.864334, 540.8804, 45.418976, 503.258, 81.06128, 543.3555, 153.33594, 546.8208, 143.43527, 530.97974, 177.5925, 546.8208, 221.65033, 511.67352, 223.63046, 522.5642, 257.78766, 484.94177, 266.6982, 446.32928, 276.10382, 472.07098, 300.8554, 432.46844, 255.80753, 344.35275, 243.92676, 256.73212, 217.69006, 217.62459)
+uv = PackedVector2Array(169.17694, 205.74382, 108.288025, 219.60472, 82.05133, 271.58307, 64.230194, 351.77823, -0.12394714, 442.86407, 1.8561707, 504.74304, 50.864334, 540.8804, 45.418976, 503.258, 81.06128, 543.3555, 153.33594, 546.8208, 143.43527, 530.97974, 177.5925, 546.8208, 221.65033, 511.67352, 223.63046, 522.5642, 257.78766, 484.94177, 266.6982, 446.32928, 276.10382, 472.07098, 300.8554, 432.46844, 255.80753, 344.35275, 243.92676, 256.73212, 217.69006, 217.62459)
+bones = ["hip", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/head", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/head/bang 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/head/bang 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/head/back hair 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/head/back hair 1/back hair 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/top arm R", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/top arm R/bot arm R", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/top arm L", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/torso/top arm L/bot arm L", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg R", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg R/bot leg R", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg R/bot leg R/foot R", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg L", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg L/bot leg L", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "hip/top leg L/bot leg L/foot L", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="arm_L" type="Node2D" parent="laz_parts"]
+position = Vector2(-322, -849)
+
+[node name="bot arm L" type="Polygon2D" parent="laz_parts/arm_L"]
+position = Vector2(75, 4)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(327.52344, 596.82294, 306.5083, 612.7575, 321.75006, 646.4741, 311.81982, 682.5001, 338.83932, 703.2844, 374.6344, 700.5132, 394.95676, 670.7224, 382.25528, 639.0842, 361.47104, 630.7705, 353.38828, 598.20856)
+uv = PackedVector2Array(327.52344, 596.82294, 306.5083, 612.7575, 321.75006, 646.4741, 311.81982, 682.5001, 338.83932, 703.2844, 374.6344, 700.5132, 394.95676, 670.7224, 382.25528, 639.0842, 361.47104, 630.7705, 353.38828, 598.20856)
+
+[node name="top arm L" type="Polygon2D" parent="laz_parts/arm_L"]
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(358.14764, 475.9969, 333.8461, 499.39838, 350.04712, 583.55383, 367.14822, 585.3539, 384.69934, 624.5065, 413.50122, 624.5065, 431.50235, 606.9553, 416.2014, 570.0529, 427.90213, 547.10144, 388.7496, 476.89694)
+uv = PackedVector2Array(358.14764, 475.9969, 333.8461, 499.39838, 350.04712, 583.55383, 367.14822, 585.3539, 384.69934, 624.5065, 413.50122, 624.5065, 431.50235, 606.9553, 416.2014, 570.0529, 427.90213, 547.10144, 388.7496, 476.89694)
+
+[node name="leg_L" type="Node2D" parent="laz_parts"]
+visible = false
+position = Vector2(-595, -493)
+
+[node name="foot L" type="Polygon2D" parent="laz_parts/leg_L"]
+position = Vector2(2, -86)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(622.34436, 478.89883, 591.04364, 493.2089, 587.95056, 534.9132, 585.16974, 578.2882, 599.8567, 586.1047, 601.96124, 607.8633, 618.64777, 617.8763, 659.12463, 615.4038, 684.82135, 600.3655, 683.0566, 581.67456, 663.43896, 564.732, 655.31915, 535.54553, 658.8015, 499.42328)
+uv = PackedVector2Array(622.34436, 478.89883, 591.04364, 493.2089, 587.95056, 534.9132, 585.16974, 578.2882, 599.8567, 586.1047, 601.96124, 607.8633, 618.64777, 617.8763, 659.12463, 615.4038, 684.82135, 600.3655, 683.0566, 581.67456, 663.43896, 564.732, 655.31915, 535.54553, 658.8015, 499.42328)
+
+[node name="bot leg L" type="Polygon2D" parent="laz_parts/leg_L"]
+position = Vector2(-1, -43)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(582.44354, 365.65646, 575.26575, 422.48868, 597.2206, 475.5012, 628.5233, 479.6494, 660.7275, 464.92404, 660.2275, 412.47452, 662.0066, 363.10208, 618.3173, 347.44913)
+uv = PackedVector2Array(582.44354, 365.65646, 575.26575, 422.48868, 597.2206, 475.5012, 628.5233, 479.6494, 660.7275, 464.92404, 660.2275, 412.47452, 662.0066, 363.10208, 618.3173, 347.44913)
+
+[node name="top leg L" type="Polygon2D" parent="laz_parts/leg_L"]
+position = Vector2(-1, 1)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(572.4148, 226.85672, 566.00726, 289.5945, 588.5853, 338.94916, 628.33466, 350.57617, 665.3811, 323.71228, 664.6999, 279.67715, 659.55164, 234.35953, 612.8318, 215.57373)
+uv = PackedVector2Array(572.4148, 226.85672, 566.00726, 289.5945, 588.5853, 338.94916, 628.33466, 350.57617, 665.3811, 323.71228, 664.6999, 279.67715, 659.55164, 234.35953, 612.8318, 215.57373)
+
+[node name="leg_R" type="Node2D" parent="laz_parts"]
+visible = false
+position = Vector2(-514, -467)
+
+[node name="foot R" type="Polygon2D" parent="laz_parts/leg_R"]
+position = Vector2(0, -86)
+texture = ExtResource("3_ta84f")
+polygon = PackedVector2Array(475.01984, 477.95203, 443.44397, 491.64423, 439.53192, 533.27966, 435.8993, 576.5917, 450.4298, 584.69525, 452.10638, 606.49097, 468.5929, 616.82996, 509.1106, 615.1534, 535.09784, 600.6229, 533.7007, 581.90094, 514.4198, 564.5761, 506.87515, 535.2357, 511.06665, 499.1889)
+uv = PackedVector2Array(475.01984, 477.95203, 443.44397, 491.64423, 439.53192, 533.27966, 435.8993, 576.5917, 450.4298, 584.69525, 452.10638, 606.49097, 468.5929, 616.82996, 509.1106, 615.1534, 535.09784, 600.6229, 533.7007, 581.90094, 514.4198, 564.5761, 506.87515, 535.2357, 511.06665, 499.1889)
+
+[node name="bot leg R" type="Polygon2D" parent="laz_parts/leg_R"]
+position = Vector2(-2, -45)
+texture = ExtResource("3_ta84f")
+polygon = PackedVector2Array(448.27094, 358.63696, 433.76587, 414.05377, 448.64285, 469.47055, 479.1407, 477.6529, 512.98584, 467.239, 519.30853, 415.16956, 527.4909, 366.4474, 486.20724, 345.24768)
+uv = PackedVector2Array(448.27094, 358.63696, 433.76587, 414.05377, 448.64285, 469.47055, 479.1407, 477.6529, 512.98584, 467.239, 519.30853, 415.16956, 527.4909, 366.4474, 486.20724, 345.24768)
+
+[node name="top leg R" type="Polygon2D" parent="laz_parts/leg_R"]
+texture = ExtResource("3_ta84f")
+polygon = PackedVector2Array(451.2426, 215.86874, 433.46054, 276.37396, 446.6239, 329.02734, 483.57367, 347.7332, 524.9112, 328.10364, 532.30115, 284.68768, 535.53424, 239.19328, 493.04202, 212.17378)
+uv = PackedVector2Array(451.2426, 215.86874, 433.46054, 276.37396, 446.6239, 329.02734, 483.57367, 347.7332, 524.9112, 328.10364, 532.30115, 284.68768, 535.53424, 239.19328, 493.04202, 212.17378)
+
+[node name="torso" type="Polygon2D" parent="laz_parts"]
+visible = false
+position = Vector2(-327, -516)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(336.41733, 289.01636, 371.1923, 275.10638, 386.32962, 255.05965, 382.23846, 248.10464, 396.55756, 234.19466, 391.64816, 218.23909, 397.3758, 177.32736, 374.46524, 148.68916, 344.19055, 133.14272, 346.23615, 102.45892, 306.55176, 102.45892, 306.14264, 138.87036, 277.50446, 147.87094, 247.63889, 171.59973, 254.18475, 226.42143, 248.45712, 245.64995, 266.45828, 257.10522, 263.59445, 270.19696, 294.27826, 290.2437)
+uv = PackedVector2Array(336.41733, 289.01636, 371.1923, 275.10638, 386.32962, 255.05965, 382.23846, 248.10464, 396.55756, 234.19466, 391.64816, 218.23909, 397.3758, 177.32736, 374.46524, 148.68916, 344.19055, 133.14272, 346.23615, 102.45892, 306.55176, 102.45892, 306.14264, 138.87036, 277.50446, 147.87094, 247.63889, 171.59973, 254.18475, 226.42143, 248.45712, 245.64995, 266.45828, 257.10522, 263.59445, 270.19696, 294.27826, 290.2437)
+
+[node name="hip" type="Polygon2D" parent="laz_parts"]
+visible = false
+position = Vector2(-330, -558)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(335.1053, 316.7665, 298.49963, 315.92822, 273.3507, 294.13248, 252.6727, 336.88565, 288.99893, 368.18207, 345.4443, 368.74097, 389.3152, 344.15088, 398.81592, 320.1197, 379.53506, 287.98495, 363.60742, 306.98636)
+uv = PackedVector2Array(335.1053, 316.7665, 298.49963, 315.92822, 273.3507, 294.13248, 252.6727, 336.88565, 288.99893, 368.18207, 345.4443, 368.74097, 389.3152, 344.15088, 398.81592, 320.1197, 379.53506, 287.98495, 363.60742, 306.98636)
+
+[node name="arm_R" type="Node2D" parent="laz_parts"]
+visible = false
+position = Vector2(-348, -839)
+
+[node name="bot arm R" type="Polygon2D" parent="laz_parts/arm_R"]
+position = Vector2(53, 1)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(171.34854, 601.01636, 159.81888, 634.48956, 133.0403, 651.97003, 134.15607, 692.1379, 154.24, 707.7587, 200.35867, 699.9483, 217.83914, 668.3347, 200.7306, 649.3665, 217.46721, 613.28986, 195.52365, 593.5778)
+uv = PackedVector2Array(171.34854, 601.01636, 159.81888, 634.48956, 133.0403, 651.97003, 134.15607, 692.1379, 154.24, 707.7587, 200.35867, 699.9483, 217.83914, 668.3347, 200.7306, 649.3665, 217.46721, 613.28986, 195.52365, 593.5778)
+
+[node name="top arm R" type="Polygon2D" parent="laz_parts/arm_R"]
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(233.67857, 572.06616, 221.99829, 610.79553, 238.90396, 624.32007, 267.18253, 623.7053, 283.47345, 588.6645, 299.76437, 580.36536, 316.36267, 505.36563, 290.23572, 476.47232, 257.6539, 485.07883, 223.84254, 548.7056)
+uv = PackedVector2Array(233.67857, 572.06616, 221.99829, 610.79553, 238.90396, 624.32007, 267.18253, 623.7053, 283.47345, 588.6645, 299.76437, 580.36536, 316.36267, 505.36563, 290.23572, 476.47232, 257.6539, 485.07883, 223.84254, 548.7056)
+
+[node name="head_parts" type="Node2D" parent="laz_parts"]
+position = Vector2(-109, -559)
+
+[node name="head" type="Polygon2D" parent="laz_parts/head_parts"]
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(175.53357, 35.78258, 178.9147, 25.63918, 152.20374, 11.438418, 147.80826, 18.200684, 111.968254, 10.424077, 64.29427, 16.510117, 36.230873, 35.106354, 15.267845, 68.24146, 6.8150024, 106.11016, 13.915382, 145.33131, 2.4195328, 151.41736, 23.38256, 185.90492, 58.54635, 204.83926, 66.99918, 196.04832, 100.810524, 199.09134, 146.45581, 192.66719, 187.02942, 174.40907, 214.4166, 129.43999, 209.34491, 76.6943, 194.80603, 50.321457)
+uv = PackedVector2Array(175.53357, 35.78258, 178.9147, 25.63918, 152.20374, 11.438418, 147.80826, 18.200684, 111.968254, 10.424077, 64.29427, 16.510117, 36.230873, 35.106354, 15.267845, 68.24146, 6.8150024, 106.11016, 13.915382, 145.33131, 2.4195328, 151.41736, 23.38256, 185.90492, 58.54635, 204.83926, 66.99918, 196.04832, 100.810524, 199.09134, 146.45581, 192.66719, 187.02942, 174.40907, 214.4166, 129.43999, 209.34491, 76.6943, 194.80603, 50.321457)
+
+[node name="bang 1" type="Polygon2D" parent="laz_parts/head_parts"]
+position = Vector2(-482, -25)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(529.0528, 197.74426, 516.7154, 190.0334, 546.0167, 171.91286, 553.72754, 141.45494, 574.1614, 156.49112, 594.9807, 153.79233, 586.8843, 135.28624, 622.7398, 105.21385, 640.86035, 59.719738, 619.65546, 21.936493, 574.5469, 8.442474, 517.872, 18.852146, 496.28162, 45.069096, 498.9804, 61.647457, 483.9442, 75.14148, 456.95618, 62.418545, 454.6429, 94.804184, 473.53455, 104.057236, 453.10074, 125.262115, 441.1489, 161.50319, 460.04053, 196.97318, 490.88397, 210.4672)
+uv = PackedVector2Array(529.0528, 197.74426, 516.7154, 190.0334, 546.0167, 171.91286, 553.72754, 141.45494, 574.1614, 156.49112, 594.9807, 153.79233, 586.8843, 135.28624, 622.7398, 105.21385, 640.86035, 59.719738, 619.65546, 21.936493, 574.5469, 8.442474, 517.872, 18.852146, 496.28162, 45.069096, 498.9804, 61.647457, 483.9442, 75.14148, 456.95618, 62.418545, 454.6429, 94.804184, 473.53455, 104.057236, 453.10074, 125.262115, 441.1489, 161.50319, 460.04053, 196.97318, 490.88397, 210.4672)
+
+[node name="bang 2" type="Polygon2D" parent="laz_parts/head_parts"]
+position = Vector2(-447, -100)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../Skeleton2D")
+polygon = PackedVector2Array(605.254, 157.27528, 614.4753, 124.58168, 646.61, 117.31644, 665.61145, 142.18593, 662.81714, 165.9377, 682.9363, 173.20294, 658.3462, 196.9547, 638.22705, 192.20435, 622.8583, 169.57031)
+uv = PackedVector2Array(605.254, 157.27528, 614.4753, 124.58168, 646.61, 117.31644, 665.61145, 142.18593, 662.81714, 165.9377, 682.9363, 173.20294, 658.3462, 196.9547, 638.22705, 192.20435, 622.8583, 169.57031)
+
+[node name="face" type="Node2D" parent="laz_parts/head_parts"]
+position = Vector2(-237, 38)
+
+[node name="nose" type="Polygon2D" parent="laz_parts/head_parts/face"]
+position = Vector2(34, 38)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(337.02707, 25.201525, 308.32172, 92.01129, 358.36554, 87.946815)
+uv = PackedVector2Array(337.02707, 25.201525, 308.32172, 92.01129, 358.36554, 87.946815)
+
+[node name="top_eyelid" type="Polygon2D" parent="laz_parts/head_parts/face"]
+position = Vector2(0, 21)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(381.4511, 33.298954, 380.73416, 25.699123, 393.49615, 15.661608, 409.55615, 15.805001, 426.33313, 23.26144, 433.78958, 36.166813, 425.3294, 40.32521, 418.15973, 34.159313, 409.26938, 29.714127, 397.9413, 29.570736)
+uv = PackedVector2Array(381.4511, 33.298954, 380.73416, 25.699123, 393.49615, 15.661608, 409.55615, 15.805001, 426.33313, 23.26144, 433.78958, 36.166813, 425.3294, 40.32521, 418.15973, 34.159313, 409.26938, 29.714127, 397.9413, 29.570736)
+
+[node name="bot_eyelid" type="Polygon2D" parent="laz_parts/head_parts/face"]
+position = Vector2(0, -17)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(384.12, 110.1131, 388.53705, 106.66563, 395.53973, 108.17389, 403.2965, 110.005356, 416.76318, 105.157364, 425.70505, 99.878426, 429.6912, 101.70989, 430.12213, 109.789894, 421.288, 116.577095, 407.17493, 120.45549, 396.18613, 119.270424, 387.45972, 116.03842)
+uv = PackedVector2Array(384.12, 110.1131, 388.53705, 106.66563, 395.53973, 108.17389, 403.2965, 110.005356, 416.76318, 105.157364, 425.70505, 99.878426, 429.6912, 101.70989, 430.12213, 109.789894, 421.288, 116.577095, 407.17493, 120.45549, 396.18613, 119.270424, 387.45972, 116.03842)
+
+[node name="iris" type="Polygon2D" parent="laz_parts/head_parts/face"]
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(413.70654, 46.070213, 402.34558, 51.261, 397.64447, 71.534454, 405.77344, 90.73057, 417.52618, 95.431656, 431.23767, 84.658325, 432.80472, 68.59627, 423.59842, 48.32282)
+uv = PackedVector2Array(413.70654, 46.070213, 402.34558, 51.261, 397.64447, 71.534454, 405.77344, 90.73057, 417.52618, 95.431656, 431.23767, 84.658325, 432.80472, 68.59627, 423.59842, 48.32282)
+
+[node name="mouth_close" type="Polygon2D" parent="laz_parts/head_parts/face"]
+position = Vector2(109.48549, 57.15039)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(231.34521, 80.233734, 231.05089, 88.10715, 254.45038, 87.66565, 253.86171, 79.57149)
+uv = PackedVector2Array(231.34521, 80.233734, 231.05089, 88.10715, 254.45038, 87.66565, 253.86171, 79.57149)
+
+[node name="mouth_cheese" type="Polygon2D" parent="laz_parts/head_parts/face"]
+visible = false
+position = Vector2(96, 97)
+texture = ExtResource("3_ta84f")
+skeleton = NodePath("../../../../Skeleton2D")
+polygon = PackedVector2Array(222.94844, 31.979969, 221.51451, 60.39787, 286.9539, 58.181793, 285.65033, 31.849611)
+uv = PackedVector2Array(222.94844, 31.979969, 221.51451, 60.39787, 286.9539, 58.181793, 285.65033, 31.849611)
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="hip" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(0, -211)
+rest = Transform2D(1, 0, 0, 1, 0, -211)
+
+[node name="torso" type="Bone2D" parent="Skeleton2D/hip"]
+position = Vector2(-2, -36)
+rest = Transform2D(1, 0, 0, 1, -2, -36)
+
+[node name="head" type="Bone2D" parent="Skeleton2D/hip/torso"]
+position = Vector2(0, -140)
+rest = Transform2D(1, 0, 0, 1, 0, -140)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
+
+[node name="bang 1" type="Bone2D" parent="Skeleton2D/hip/torso/head"]
+position = Vector2(50, -131)
+rest = Transform2D(1, 0, 0, 1, 50, -131)
+auto_calculate_length_and_angle = false
+length = 200.0
+bone_angle = 144.99998
+
+[node name="bang 2" type="Bone2D" parent="Skeleton2D/hip/torso/head"]
+position = Vector2(63, -128)
+rest = Transform2D(1, 0, 0, 1, 63, -128)
+auto_calculate_length_and_angle = false
+length = 53.541
+bone_angle = 35.277996
+
+[node name="back hair 1" type="Bone2D" parent="Skeleton2D/hip/torso/head"]
+position = Vector2(-22.000004, -52.00003)
+rotation = 1.6018728
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.031071417, 0.99951714, -0.99951714, -0.031071417, -22.000004, -52.00003)
+auto_calculate_length_and_angle = false
+length = 297.56
+bone_angle = 0.0
+
+[node name="back hair 2" type="Bone2D" parent="Skeleton2D/hip/torso/head/back hair 1"]
+position = Vector2(158.32768, 8.084433)
+rotation = 0.14299719
+rest = Transform2D(0.9897933, 0.14251035, -0.14251035, 0.9897933, 158.32768, 8.084433)
+auto_calculate_length_and_angle = false
+length = 138.234
+bone_angle = -19.765999
+
+[node name="top arm R" type="Bone2D" parent="Skeleton2D/hip/torso"]
+position = Vector2(-59.999985, -93.00003)
+rotation = 1.9207702
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.34287325, 0.93938166, -0.93938166, -0.34287325, -59.999985, -93.00003)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
+
+[node name="bot arm R" type="Bone2D" parent="Skeleton2D/hip/torso/top arm R"]
+position = Vector2(126.872894, 0.5308771)
+rotation = 0.043521903
+rest = Transform2D(0.99905306, 0.043508165, -0.043508165, 0.99905306, 126.872894, 0.5308771)
+auto_calculate_length_and_angle = false
+length = 81.697
+bone_angle = 0.0
+
+[node name="top arm L" type="Bone2D" parent="Skeleton2D/hip/torso"]
+position = Vector2(44, -100)
+rest = Transform2D(1, 0, 0, 1, 44, -100)
+
+[node name="bot arm L" type="Bone2D" parent="Skeleton2D/hip/torso/top arm L"]
+position = Vector2(46, 115)
+rest = Transform2D(1, 0, 0, 1, 46, 115)
+auto_calculate_length_and_angle = false
+length = 81.777
+bone_angle = 72.995995
+
+[node name="top leg R" type="Bone2D" parent="Skeleton2D/hip"]
+position = Vector2(-26.000008, -24)
+rotation = 1.6644055
+rest = Transform2D(-0.09347249, 0.99562186, -0.99562186, -0.09347249, -26.000008, -24)
+
+[node name="bot leg R" type="Bone2D" parent="Skeleton2D/hip/top leg R"]
+position = Vector2(107.6532, 1.9458997)
+rotation = 0.014359013
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(0.9998969, 0.01435852, -0.01435852, 0.9998969, 107.6532, 1.9458997)
+
+[node name="foot R" type="Bone2D" parent="Skeleton2D/hip/top leg R/bot leg R"]
+position = Vector2(85.49923, -9.267233)
+rest = Transform2D(1, 0, 0, 1, 85.49923, -9.267233)
+auto_calculate_length_and_angle = false
+length = 81.697
+bone_angle = -25.702
+
+[node name="top leg L" type="Bone2D" parent="Skeleton2D/hip"]
+position = Vector2(25, -47)
+rotation = 1.5380367
+rest = Transform2D(0.03275376, 0.99946344, -0.99946344, 0.03275376, 25, -47)
+
+[node name="bot leg L" type="Bone2D" parent="Skeleton2D/hip/top leg L"]
+position = Vector2(106.90983, 4.504116)
+rotation = 0.014359013
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(0.9998969, 0.01435852, -0.01435852, 0.9998969, 106.90983, 4.504116)
+
+[node name="foot L" type="Bone2D" parent="Skeleton2D/hip/top leg L/bot leg L"]
+position = Vector2(86.37071, -0.8297634)
+rest = Transform2D(1, 0, 0, 1, 86.37071, -0.8297634)
+auto_calculate_length_and_angle = false
+length = 81.697
+bone_angle = -19.095999
